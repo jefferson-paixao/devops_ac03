@@ -1,5 +1,5 @@
 import pytest
-from bd import bancodedados
+from com.jefferson.bd import bancodedados
 
 def test_criando_tabela():
     banco = bancodedados()
