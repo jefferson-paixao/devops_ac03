@@ -1,4 +1,5 @@
 import pytest
+import sqlite3
 from com.jefferson.bd import bancodedados
 
 def test_criando_tabela():
