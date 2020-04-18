@@ -9,7 +9,7 @@ class bancodedados():
             content = content_file.read()
             c.execute(content)
 
-        c.execute('SELECT * FROM pragma_table_info(ac3) WHERE name = '+coluna)
+        c.execute('SELECT * FROM sqlite_master AS m,pragma_table_info(m.name) WHERE name = '+coluna)
         for row in c.fetchall():
            notnull = row[3]
            pk = row[5]
