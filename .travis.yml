@@ -7,4 +7,4 @@ before install:
   - pip install -U pytest
   - pip install -U pytest-cov
 script:
-- pytest --cov=com.jefferson com/jefferson/test/
+  - pytest --cov=com.jefferson com/jefferson/test/
