@@ -14,6 +14,7 @@ class bancodedados():
            notnull = row[3]
            pk = row[5]
 
+        conn.commit()
         conn.close()
 
         if campo == "pk":
